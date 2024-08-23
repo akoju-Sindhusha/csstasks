@@ -1,0 +1,50 @@
+.menu{
+    background-color: black;
+    width: 25px;
+    height: 5px;
+    margin: 3px;
+}
+nav{
+    background-color:white;
+    width: 97%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2%;
+    position: fixed;
+    font-size: xx-large;
+    padding: 10px;
+    top: 0;
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 80px;
+    height: 100vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+.p1{
+    font-size: x-large;
+    width: 250px;
+}
+.p2{
+    font-size: medium;
+    width: 250px;
+}
+.i1{
+   border:none;
+   width: 21vw;
+   padding: 15px;  
+}
+.img{
+    height: max-content;
+    width: 280px;
+}
+@media only screen and (width<700px){
+    main{
+        grid-template-columns: auto;
+    }
+}
+

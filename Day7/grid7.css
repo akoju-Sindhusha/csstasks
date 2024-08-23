@@ -1,0 +1,54 @@
+.container{
+    border: 3px solid ;
+    width: 370px;
+    height: 400px;
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: auto auto auto;
+    padding: 2%;
+    row-gap: 15px;
+    column-gap: 15px; 
+}
+.container div{
+    border: 2px solid black;
+    padding: 10px;
+    align-content: center;
+}
+.item1{
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+.item2{
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+.item3{
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.item6{
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
+#grad1{
+    background-image: linear-gradient(to right,rgb(114, 23, 198), rgb(148, 96, 196));
+}
+#grad2{
+    background-image: linear-gradient(to right,rgb(114, 23, 198), rgb(148, 96, 196));
+}
+#grad3{
+    background-image: linear-gradient(to right,rgb(114, 23, 198), rgb(148, 96, 196));
+}
+#grad4{
+    background-image: linear-gradient(to right,rgb(114, 23, 198), rgb(148, 96, 196));
+}
+#grad5{
+    background-image: linear-gradient(to right,rgb(114, 23, 198), rgb(148, 96, 196));
+}
+#grad6{
+    background-image: linear-gradient(to right,rgb(114, 23, 198), rgb(148, 96, 196));
+}
+
+

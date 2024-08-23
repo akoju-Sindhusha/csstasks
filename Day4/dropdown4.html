@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.btn{
+    color: green;
+    background-color: black;
+    width: 30vw;
+    height: 30vh;
+    margin-left: 12%;
+}
+
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    color: green;
+    padding: 7px;
+    
+}
+
+.dropdown .list{
+    display: none;
+    position: absolute;
+    background-color: rgb(236, 221, 203);
+    height: 30%;
+    width: 30%;
+    margin-left: 20%;
+    box-shadow: 3px 2px ;
+}
+
+.dropdown:hover .list{
+    display: block;
+}
+
+    
+</style>
+
+<body>
+    <nav>
+        <div class="dropdown">
+            <button class="btn"><H1>HOME</H1></button>
+            <div class="list">
+              <a href=" https://www.w3schools.com/html/default.asp"> HTML</a>
+              <a href="https://www.w3schools.com/css/default.asp "> CSS</a>
+              <a href=" https://www.w3schools.com/js/default.asp"> JAVASCRIPT</a>
+            </div>
+          </div>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Transition*/
+        .p1{
+            border: 2px solid;
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+            transition-property: width;
+        }
+        .p1:hover{
+            width: 180px;
+        }
+        .p2{
+            border: 2px solid;
+            background-color:goldenrod;
+            width: 100px;
+            height: 100px;
+            transition-duration: 5s;
+        }
+        .p2:hover{
+            background-color: mediumspringgreen;
+        }
+        .p3{
+            border: 2px solid;
+            background-color:mediumorchid;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: move 5s infinite;
+            animation-timing-function: linear;
+        }
+        .p4{
+            border: 2px solid;
+            background-color: darkcyan;
+            width: 100px;
+            height: 100px;
+            transition-delay: 2s;
+        }
+        .p4:hover{
+            height: 160px;
+        }
+
+        /*transform*/
+        .c1{
+            border: 2px solid;
+            background-color: lemonchiffon;
+            width: 200px;
+            height: 100px;
+        }
+        .c2{
+            border: 2px solid;
+            background-color: lightcyan;
+            width: 200px;
+            height: 100px;
+        }
+        .c3{
+            border: 2px solid;
+            background-color: aqua ;
+            width: 200px;
+            height: 100px;
+        }
+        .c4{
+            border: 2px solid;
+            background-color:hotpink ;
+            width: 200px;
+            height: 100px;
+        }
+        .c5{
+            border: 2px solid;
+            background-color: salmon;
+            width: 200px;
+            height: 100px;
+        }
+
+        /*Transforms applied to content*/
+        .c1:hover{
+            transform:translate(100px,90px)
+        }
+        .c2:hover{
+             transform: rotate(90deg);
+        }
+        .c3:hover{
+            transform: scale(1,2);
+        }
+        .c4:hover{
+            transform: scale(0.5);
+        }
+        .c5:hover{
+            transform: skew(15deg);
+        }
+
+        @keyframes move {
+           from {left: 0px;}
+             to {left: 200px;}
+           }
+    </style>
+</head>
+<body>
+    <h1><u>Transition</u></h1>
+
+    <h2>Property</h2> 
+    <p class="p1">Content - 1</p>
+
+    <h2>Duration</h2> 
+    <p class="p2">Content - 2</p>
+
+    <h2>Timing-function</h2> 
+    <p class="p3">Content - 3</p>
+
+    <h2>Delay</h2> 
+    <p class="p4">Content - 4</p>
+ 
+    <!--transform-->
+    <h1><u>Transform</u></h1>
+
+    <h2>Translate</h2> 
+    <p class="c1">Content - 1</p>
+
+    <h2>Rotate</h2> 
+     <div class="c2">
+         <p >Content - 2</p>
+    </div>
+
+    <h2>Scale-in</h2> 
+    <p class="c3">Content - 3</p>
+
+    <h2>Scale-out</h2> 
+    <p class="c4">Content - 4</p>
+
+    <h2>Skew</h2> 
+    <p class="c5">Content - 5</p>
+    
+
+
+</body>
+</html>

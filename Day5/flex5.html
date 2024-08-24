@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
 .star{
     color: rgb(43, 179, 43);
     line-height: 0.5px;
@@ -37,15 +40,24 @@
     justify-content: space-between;
     justify-content: space-around;
 }
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: backwards; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
     </style>
 </head>
 <body style="background-color: gainsboro; margin-top: 4%;">
 
+    <h1 class="animate__animated animate__bounce">Animation</h1>
+    <h1>animation</h1>
     <div class="container">
         <div class="box1">
             <div class="f1">
                 <img src="https://logo-marque.com/wp-content/uploads/2021/03/Stripe-Embleme.jpg" width="25%" height="60px">
-                <div >
+                <div class="animate__animated animate__backInLeft">
                     <h3>Stripe</h3>
                     <p class="gray">Payment Services</p>
                     <p class="fa fa-star star"></p>
